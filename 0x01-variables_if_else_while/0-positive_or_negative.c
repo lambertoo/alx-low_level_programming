@@ -1,8 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
+#define RAND_MAx 2000000
 /* more headers goes here */
 
 /* betty style doc for function main goes there */
+/**
+ * main -Entry point.
+ *
+ * Description: program will assign a random numbe on var 'n'
+ * each time it is executed.
+ *
+ * Return: 0 (success)
+ */
 int main(void)
 {
 	int n;
