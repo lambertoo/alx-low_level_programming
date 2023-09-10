@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE -Wall -Werror -Wextra -pedantic -std=gnu89 -o 100-main.s
+gcc -S -masm=intel $CFILE -Wall -Werror -Wextra -pedantic -std=gnu89 -o 100-main.s
