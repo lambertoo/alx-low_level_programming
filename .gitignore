@@ -1,3 +1,7 @@
 *~
 # ignore fils named 'clean'
 clean
+
+# do not add/push these from 0x02
+0x02-functions_nested_loops/_putchar*
+0x02-functions_nested_loops/*main.c
