@@ -11,7 +11,7 @@
 int main(void)
 {
 	char texts[] = {'_', 'p', 'u', 't',
-					'c', 'h', 'a', 'r', '\0'};
+					'c', 'h', 'a', 'r'};
 
 	int i;
 
