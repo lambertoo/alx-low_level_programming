@@ -13,7 +13,7 @@ void times_table(void)
 	int m;
 	int t;
 	int eq;
-	
+
 	for (m = 0; m <= 9; m++)
 	{
 		for (t = 0; t <= 9; t++)
