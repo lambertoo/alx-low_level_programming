@@ -1,4 +1,5 @@
 #include "_isalpha.h"
+#include "_putchar.h"
 
 /**
  * _isalpha - checks for uppercase or
