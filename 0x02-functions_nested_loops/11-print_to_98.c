@@ -33,9 +33,18 @@ void less_than_equal_98(int n)
 
 	for (i = n; i <= 98; i++)
 	{
-		int p = 0;
+		int p = 0, hrd = 0;
 
-		if ((i > -100) && (i < 0))
+		if ((i > -1000) && (i <= -100))
+		{
+			p = i * -1;
+			_putchar('-');
+			hrd = ((p / 100) * 100);
+			_putchar((p / 100) + 48);
+			_putchar(((p - hrd) / 10) + 48);
+			_putchar((p % 10) + 48);
+		}
+		else if ((i > -100) && (i < 0))
 		{
 			p = i * -1;
 			_putchar('-');
