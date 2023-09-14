@@ -7,7 +7,7 @@
  * Return: 1 if c is uppercase
  * 0 otherwise
  */
-int _upper(int c)
+int _isupper(int c)
 {
 	int i = 65;
 
