@@ -2,7 +2,7 @@
 #include "_putchar.h"
 
 /**
- * print_alphabet_10x - prints all alphabet 10 times
+ * print_alphabet_x10 - prints all alphabet 10 times
  * in lowercase
  *
  * Return: (void)
