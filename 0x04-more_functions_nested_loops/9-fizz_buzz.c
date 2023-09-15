@@ -27,6 +27,7 @@ int main(void)
 			break;
 		default:
 			printf("%d ", n);
+			break;
 		}
 	}
 	printf("\n");
