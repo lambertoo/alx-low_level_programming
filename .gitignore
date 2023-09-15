@@ -4,6 +4,9 @@ clean
 
 # do not add/push these from 0x02
 0x02-functions_nested_loops/_putchar.c
-0x02-functions_nested_loops/*main.*
+0x02-functions_nested_loops/*main.c
 **/a.out
 **/compile
+
+0x04-more_functions_nested_loops/_putchar.c
+0x04-more_functions_nested_loops/*main.c
