@@ -17,18 +17,20 @@ int main(void)
 		switch (mul_3_5(n))
 		{
 		case 3:
-			printf("Fizz ");
+			printf("Fizz");
 			break;
 		case 5:
-			printf("Buzz ");
+			printf("Buzz");
 			break;
 		case 15:
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 			break;
 		default:
-			printf("%d ", n);
+			printf("%d", n);
 			break;
 		}
+		if (n != 100)
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
