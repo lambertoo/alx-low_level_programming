@@ -3,29 +3,29 @@
 
 /**
  * print_triangle - draw a triangle in terminal
- * @n: size of the triangle
+ * @size: size of the triangle
  *
  * Return: void
  */
-void print_triangle(int n)
+void print_triangle(int size)
 {
 	int i;
 	int j;
 	int k;
 
-	for (i = 1; i <= n; ++i)
+	for (i = 1; i <= size; ++i)
+	{
+		for (j = 1; j <= size - i; ++j)
 		{
-			for (j = 1; j <= n - i; ++j)
-				{
-					_putchar(' ');
-				}
-			for (k = 0; k < i; k++)
-				{
-					_putchar('#');
-				}
-			_putchar('\n');
+			_putchar(' ');
 		}
+		for (k = 0; k < i; k++)
+		{
+			_putchar('#');
+		}
+		_putchar('\n');
+	}
 
-	if (n <= 0)
+	if (size <= 0)
 		_putchar('\n');
 }
