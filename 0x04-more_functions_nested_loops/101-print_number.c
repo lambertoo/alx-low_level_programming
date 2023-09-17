@@ -1,5 +1,8 @@
-#include "print_numbers.h"
+#include "print_number.h"
 #include "_putchar.h"
+
+void positive_num(int);
+void negative_num(int);
 
 /**
  * print_number - print integers
@@ -9,7 +12,21 @@
  */
 void print_number(int n)
 {
-	int hrd = 0, thsnd = 0, posi = 0;
+	if (n >= 0)
+		positive_num(n);
+	else
+		negative_num(n);
+}
+
+/**
+ * positive_num - prints positive integers
+ * @n: integer number
+ *
+ * Return: void
+ */
+void positive_num(int n)
+{
+	int hrd, thsnd;
 
 	if (n >= 1000)
 	{
@@ -35,12 +52,46 @@ void print_number(int n)
 			_putchar((n / 10) + 48);
 		_putchar((n % 10) + 48);
 	}
-	else if ((n < 0) && (n > -100))
+}
+
+/**
+ * netative_num - prints integers that are negatice
+ * @n: integer number
+ *
+ * Return: void
+ */
+void negative_num(int n)
+{
+	int thsnd, hrd, posi;
+
+	if ((n < 0) && (n > -100))
 	{
 		posi = n * (-1);
 
 		_putchar('-');
 		_putchar((posi / 10) + 48);
+		_putchar((posi % 10) + 48);
+	}
+	else if ((n <= -100) && (n > -1000))
+	{
+		posi = n * (-1);
+		hrd = (posi / 100) * 100;
+
+		_putchar('-');
+		_putchar((hrd / 100) + 48);
+		_putchar(((posi - hrd) / 10) + 48);
+		_putchar((posi % 10) + 48);
+	}
+	else if (n <= -1000)
+	{
+		posi = n * (-1);
+		thsnd =  (posi / 1000) * 1000;
+		hrd = ((posi - thsnd) / 100) * 100;
+
+		_putchar('-');
+		_putchar((thsnd / 1000) + 48);
+		_putchar((hrd / 100) + 48);
+		_putchar(((posi - (thsnd + hrd)) / 10) + 48);
 		_putchar((posi % 10) + 48);
 	}
 }
