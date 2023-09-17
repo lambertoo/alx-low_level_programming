@@ -32,12 +32,12 @@ void positive_num(int n)
 	{
 		tnthsnd = (n / 10000) * 10000;
 		thsnd = ((n - tnthsnd) / 1000) * 1000;
-		hrd = ((n - thsnd) / 100) * 100;
+		hrd = ((n - (thsnd + tnthsnd)) / 100) * 100;
 
 		_putchar((tnthsnd / 10000) + 48);
 		_putchar((thsnd / 1000) + 48);
 		_putchar((hrd / 100) + 48);
-		_putchar(((n - (thsnd + hrd)) / 10) + 48);
+		_putchar(((n - (tnthsnd + thsnd + hrd)) / 10) + 48);
 		_putchar((n % 10) + 48);
 	}
 	else if ((n >= 1000) && (n < 10000))
@@ -74,7 +74,7 @@ void positive_num(int n)
  */
 void negative_num(int n)
 {
-	int thsnd, hrd, posi;
+	int thsnd, hrd, posi, tnthsnd;
 
 	if ((n < 0) && (n > -100))
 	{
@@ -94,7 +94,7 @@ void negative_num(int n)
 		_putchar(((posi - hrd) / 10) + 48);
 		_putchar((posi % 10) + 48);
 	}
-	else if ((n <= -1000) && (n > -1000))
+	else if ((n <= -1000) && (n > -10000))
 	{
 		posi = n * (-1);
 		thsnd =  (posi / 1000) * 1000;
@@ -111,13 +111,13 @@ void negative_num(int n)
 		posi = n * (-1);
 		tnthsnd = (posi / 10000) * 10000;
 		thsnd = ((posi - tnthsnd) / 1000) * 1000;
-		hrd = ((posi - thsnd) / 100) * 100;
+		hrd = ((posi - (thsnd + tnthsnd)) / 100) * 100;
 
 		_putchar('-');
 		_putchar((tnthsnd / 10000) + 48);
 		_putchar((thsnd / 1000) + 48);
 		_putchar((hrd / 100) + 48);
-		_putchar(((posi - (thsnd + hrd)) / 10) + 48);
+		_putchar(((posi - (tnthsnd + thsnd + hrd)) / 10) + 48);
 		_putchar((posi % 10) + 48);
 	}
 }
