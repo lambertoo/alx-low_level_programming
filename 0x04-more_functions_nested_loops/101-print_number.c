@@ -26,9 +26,21 @@ void print_number(int n)
  */
 void positive_num(int n)
 {
-	int hrd, thsnd;
+	int hrd, thsnd, tnthsnd;
 
-	if (n >= 1000)
+	if (n >= 10000)
+	{
+		tnthsnd = (n / 10000) * 10000;
+		thsnd =  ((n - tnthsnd) / 1000) * 1000;
+		hrd = ((n - thsnd) / 100) * 100;
+
+		_putchar((tnthsnd / 10000) + 48);
+		_putchar((thsnd / 1000) + 48);
+		_putchar((hrd / 100) + 48);
+		_putchar(((n - (thsnd + hrd)) / 10) + 48);
+		_putchar((n % 10) + 48);
+	}
+	if ((n >= 1000) && (n < 10000))
 	{
 		thsnd =  (n / 1000) * 1000;
 		hrd = ((n - thsnd) / 100) * 100;
