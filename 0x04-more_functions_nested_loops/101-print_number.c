@@ -55,7 +55,7 @@ void positive_num(int n)
 }
 
 /**
- * netative_num - prints integers that are negatice
+ * negative_num - prints integers that are negatice
  * @n: integer number
  *
  * Return: void
