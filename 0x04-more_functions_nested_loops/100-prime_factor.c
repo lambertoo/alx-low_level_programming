@@ -39,7 +39,7 @@ int main(void)
 			bgnum = n;
 	}
 	
-	printf("%ld \n", bgnum);
+	printf("%ld\n", bgnum);
 
 	return (0);
 }
