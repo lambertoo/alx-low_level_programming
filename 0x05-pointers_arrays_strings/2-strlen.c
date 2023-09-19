@@ -17,11 +17,11 @@ int _strlen(char *s)
 	n = 0;
 	while (1)
 	{
-		if (c[n] == '\0')
-			break;
-		else
+		if (c[n] != '\0')
 			n++;
+		else
+			break;
 	}
 
-	return (n + 1);
+	return (n);
 }
