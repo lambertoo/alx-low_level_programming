@@ -23,7 +23,12 @@ void print_rev(char *str)
 	}
 
 	for (; n >= 0; n--)
-		_putchar(txt[n]);
+	{
+		if (txt[n] != '\0')
+			_putchar(txt[n]);
+		else
+			continue;
+	}
 
 	_putchar('\n');
 }
