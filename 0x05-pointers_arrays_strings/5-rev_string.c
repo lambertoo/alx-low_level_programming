@@ -1,5 +1,6 @@
 #include "rev_string.h"
 #include "_putchar.h"
+#include <stdio.h>
 
 /**
  * rev_string - reverses a string
@@ -22,13 +23,11 @@ void rev_string(char *str)
 			break;
 	}
 
-	l = n;
 	for (c = -1; n >= 0; n--, c++)
 	{
-		if (txt[n] != '\0')
-			str[c] = txt[n];
-		else
-			continue;
+		printf("%c,", txt[n]);
+		str[c] = txt[n];
+		l = n;
 	}
 
 	str[l] = '\0';
