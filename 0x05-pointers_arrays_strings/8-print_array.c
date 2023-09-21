@@ -86,7 +86,7 @@ void print_neg(int i)
 		hrd = ((p / 100) * 100);
 		_putchar((p / 1000) + 48);
 		_putchar(((p - thsnd) / 100) + 48);
-		_putchar(((p - (thsnd + hrd)) / 10) + 48);
+		_putchar(((p - (thsnd)) / 10) + 48);
 		_putchar((p % 10) + 48);
 	}
 	else if ((i > -1000) && (i <= -100))
