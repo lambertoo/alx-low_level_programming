@@ -1,6 +1,6 @@
 #include "puts_half.h"
 #include "_putchar.h"
-#include <stdio.h>
+
 
 /**
  * puts_half - prints half of the string
@@ -22,7 +22,7 @@ void puts_half(char *str)
 		else
 			break;
 	}
-	printf("c is:%d\n", c);
+
 	n = c / 2;
 	while (1)
 	{
