@@ -28,8 +28,8 @@ void puts_half(char *str)
 	{
 		if (str[n] != '\0')
 		{
-			n++;
 			_putchar(str[n]);
+			n++;
 		}
 		else
 		{
