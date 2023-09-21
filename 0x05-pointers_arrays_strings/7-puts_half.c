@@ -26,7 +26,7 @@ void puts_half(char *str)
 	if ((c % 2) == 1)
 		n += 1;
 
-	for (;1 ; ++n)
+	for (; 1 ; ++n)
 	{
 		if (str[n] != '\0')
 			_putchar(str[n]);
