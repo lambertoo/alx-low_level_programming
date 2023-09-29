@@ -1,6 +1,6 @@
 #include "is_prime_number.h"
 
-int is_prime(int n, int i = 2);
+int prime_helper(int, int);
 
 /**
  * is_prime_number - prints 1 or 0 is the input number is
@@ -11,23 +11,23 @@ int is_prime(int n, int i = 2);
  */
 int is_prime_number(int n)
 {
-	if (n <= 2)
-		return ((n == 2) ? 1 : 0);
-	return (is_prime(n));
+	if (n <= 1 )
+		return (0);
+	return (prime_helper(n, n-1));
 }
 
 /**
- * is_prime - verifies if the given num is prime
- * @n: given number
- * @i: diversor
+ * prime_helper - helper to find prime number
+ * @n: number to find prime num for
+ * @div: divisor to calc prime num
  *
- * Return: 1 if true or 0 otherwise (int)
+ * Return: int
  */
-int is_prime(int n, int i = 2)
+int prime_helper(int n, int div)
 {
-	if (n % i == 0)
-		return (0);
-	if (i * i > n)
+	if (div <= 1)
 		return (1);
-	return (is_prime(n, i + 1);
+	if (n % div == 0)
+		return (0);
+	return (prime_helper(n, div - 1));
 }
