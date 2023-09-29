@@ -11,9 +11,9 @@ int prime_helper(int, int);
  */
 int is_prime_number(int n)
 {
-	if (n <= 1 )
+	if (n <= 1)
 		return (0);
-	return (prime_helper(n, n-1));
+	return (prime_helper(n, n - 1));
 }
 
 /**
