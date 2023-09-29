@@ -10,7 +10,9 @@ int _sqrt_rec(int, int, int);
  */
 int _sqrt_recursion(int n)
 {
-	if (n <= 1)
+	if (n < 0)
+		return (-1);
+	else if (n <= 1)
 		return (n);
 	return (_sqrt_rec(n, 1, n));
 }
@@ -25,7 +27,7 @@ int _sqrt_recursion(int n)
  */
 int _sqrt_rec(int n, int left, int right)
 {
-	int mid, square;
+	long mid, square;
 
 	mid = left + (right - left) / 2;
 	square = mid * mid;
