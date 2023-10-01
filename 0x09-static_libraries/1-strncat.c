@@ -1,4 +1,4 @@
-#include "_strncat.h"
+#include "strncat.h"
 
 /**
  * _strncat - Concatenates two strings using 'n' bytes

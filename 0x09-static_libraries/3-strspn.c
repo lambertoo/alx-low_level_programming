@@ -1,4 +1,4 @@
-#include "_strspn.h"
+#include "strspn.h"
 #include <stdio.h>
 
 /**

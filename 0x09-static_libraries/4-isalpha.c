@@ -1,4 +1,4 @@
-#include "_isalpha.h"
+#include "isalpha.h"
 #include "_putchar.h"
 
 /**

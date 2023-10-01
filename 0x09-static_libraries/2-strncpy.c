@@ -1,4 +1,4 @@
-#include "_strncpy.h"
+#include "strncpy.h"
 
 /**
  * _strncpy - copies two strings using 'n' bytes

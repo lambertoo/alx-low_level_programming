@@ -1,4 +1,4 @@
-#include "_memcpy.h"
+#include "memcpy.h"
 
 /**
  * _memcpy - copies memory area

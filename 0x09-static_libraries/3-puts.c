@@ -1,4 +1,4 @@
-#include "_puts.h"
+#include "puts.h"
 #include "_putchar.h"
 
 /**
