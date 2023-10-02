@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("%d\n", (atoi(argv[1]) * atoi(argv[2])));
+	printf("%ld\n", (atoi(argv[1]) * atoi(argv[2])));
 	(void)argc;
 
 	return (0);
