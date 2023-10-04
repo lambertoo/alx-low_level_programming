@@ -12,14 +12,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int i, sum, val;
 
 	sum = 0;
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (!isdigit(*argv[i]))
+			val = atoi(argv[i]);
+			if (isdigit(val) || val == 0)
 			{
 				printf("Error\n");
 				return (1);
