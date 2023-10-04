@@ -16,15 +16,16 @@ int main(int argc, char *argv[])
 	int coins, cents;
 
 	coins = 0;
-	if (argc == 2 && isdigit(*argv[1]))
+	if (argc == 2)
 	{
 		cents = atoi(argv[1]);
 		if (cents < 0)
 			printf("0\n");
 		else
+		{
 			coins = calc_coins(cents);
-
-		printf("%d\n", coins);
+			printf("%d\n", coins);
+		}
 	}
 	else
 	{
