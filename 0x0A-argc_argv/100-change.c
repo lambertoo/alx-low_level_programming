@@ -15,9 +15,9 @@ int main(int argc, char *argv[])
 	int coins, cents;
 
 	coins = 0;
-	cents = atoi(argv[1]);
-	if (argc >= 1)
+	if (argc > 1)
 	{
+		cents = atoi(argv[1]);
 		if (cents < 0)
 			printf("0\n");
 		else
