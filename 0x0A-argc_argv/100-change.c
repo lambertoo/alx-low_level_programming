@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 int calc_coins(int);
 
@@ -15,7 +16,7 @@ int main(int argc, char *argv[])
 	int coins, cents;
 
 	coins = 0;
-	if (argc > 1)
+	if (argc > 1 && isdigit(*argv[1]))
 	{
 		cents = atoi(argv[1]);
 		if (cents < 0)
