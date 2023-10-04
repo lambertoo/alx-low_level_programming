@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	int coins, cents;
 
 	coins = 0;
-	if (argc > 1 && isdigit(*argv[1]))
+	if (argc == 2 && isdigit(*argv[1]))
 	{
 		cents = atoi(argv[1]);
 		if (cents < 0)
