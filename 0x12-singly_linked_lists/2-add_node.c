@@ -31,7 +31,13 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		count++;
 	}
-	_putchar(count + 48);
+	if (count >= 10)
+	{
+		_putchar((count / 10) + 48);
+		_putchar((count % 10) + 48);
+	}
+	else
+		_putchar(count + 48);
 	_putchar(']');
 	for (i = 0; new_node->str[i] != '\0'; ++i)
 		_putchar(new_node->str[i]);
