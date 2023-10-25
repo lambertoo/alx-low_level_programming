@@ -9,7 +9,8 @@
  *
  * Return: Pointer to the allocated grid, or NULL on failure.
  */
-int **alloc_grid(int width, int height) {
+int **alloc_grid(int width, int height)
+{
 	int i, j;
 	int **grid;
 
